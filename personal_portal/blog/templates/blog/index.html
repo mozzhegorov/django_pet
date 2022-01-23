@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +11,14 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&amp;display=swap" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/dark.css" type="text/css">
-	<link rel="stylesheet" href="css/font-icons.css" type="text/css">
-	<link rel="stylesheet" href="css/animate.css" type="text/css">
-	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/dark.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/font-icons.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
 
-	<link rel="stylesheet" href="css/custom.css" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/custom.css' %}" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
@@ -37,8 +38,8 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo">
-							<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo" style="height: 100px;"></a>
-							<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo" style="height: 100px;"></a>
+							<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="../../../static/images/logo.png" alt="Canvas Logo" style="height: 100px;"></a>
+							<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="../../../static/images/logo@2x.png" alt="Canvas Logo" style="height: 100px;"></a>
 						</div><!-- #logo end -->
 
 						<div class="header-misc">
@@ -60,7 +61,7 @@
 									<div class="top-cart-items">
 										<div class="top-cart-item">
 											<div class="top-cart-item-image">
-												<a href="#"><img src="images/shop/small/1.jpg" alt="Blue Round-Neck Tshirt"></a>
+												<a href="#"><img src="../../../static/images/shop/small/1.jpg" alt="Blue Round-Neck Tshirt"></a>
 											</div>
 											<div class="top-cart-item-desc">
 												<div class="top-cart-item-desc-title">
@@ -72,7 +73,7 @@
 										</div>
 										<div class="top-cart-item">
 											<div class="top-cart-item-image">
-												<a href="#"><img src="images/shop/small/6.jpg" alt="Light Blue Denim Dress"></a>
+												<a href="#"><img src="../../../static/images/shop/small/6.jpg" alt="Light Blue Denim Dress"></a>
 											</div>
 											<div class="top-cart-item-desc">
 												<div class="top-cart-item-desc-title">
@@ -1546,7 +1547,7 @@
 										<div class="timeline-divider"></div>
 									</div>
 									<div class="entry-image">
-										<a href="images/blog/full/17.jpg" data-lightbox="image"><img src="images/blog/standard/17.jpg" alt="Standard Post with Image"></a>
+										<a href="../../../static/images/blog/full/17.jpg" data-lightbox="image"><img src="../../../static/images/blog/standard/17.jpg" alt="Standard Post with Image"></a>
 									</div>
 									<div class="entry-title">
 										<h2><a href="blog-single.html">This is a Standard post with a Preview Image</a></h2>
@@ -1599,11 +1600,11 @@
 										<div class="fslider" data-arrows="false" data-lightbox="gallery">
 											<div class="flexslider">
 
-											<div class="flex-viewport" style="overflow: hidden; position: relative; height: 320.927px;"><div class="slider-wrap" style="width: 1000%; transition-duration: 0s; transform: translate3d(-1380px, 0px, 0px);"><div class="slide clone" aria-hidden="true" style="width: 690px; margin-right: 0px; float: left; display: block;"><a href="images/blog/full/21.jpg" data-lightbox=""><img src="images/blog/standard/21.jpg" alt="Standard Post with Gallery" draggable="false"></a></div>
-													<div class="slide" style="width: 690px; margin-right: 0px; float: left; display: block;" data-thumb-alt=""><a href="images/blog/full/10.jpg" data-lightbox="gallery-item"><img src="images/blog/standard/10.jpg" alt="Standard Post with Gallery" draggable="false"></a></div>
-													<div class="slide flex-active-slide" data-thumb-alt="" style="width: 690px; margin-right: 0px; float: left; display: block;"><a href="images/blog/full/20.jpg" data-lightbox="gallery-item"><img src="images/blog/standard/20.jpg" alt="Standard Post with Gallery" draggable="false"></a></div>
-													<div class="slide" data-thumb-alt="" style="width: 690px; margin-right: 0px; float: left; display: block;"><a href="images/blog/full/21.jpg" data-lightbox="gallery-item"><img src="images/blog/standard/21.jpg" alt="Standard Post with Gallery" draggable="false"></a></div>
-												<div class="slide clone" style="width: 690px; margin-right: 0px; float: left; display: block;" aria-hidden="true"><a href="images/blog/full/10.jpg" data-lightbox=""><img src="images/blog/standard/10.jpg" alt="Standard Post with Gallery" draggable="false"></a></div></div></div><ol class="flex-control-nav flex-control-paging"><li><a href="#" class="">1</a></li><li><a href="#" class="flex-active">2</a></li><li><a href="#">3</a></li></ol></div>
+											<div class="flex-viewport" style="overflow: hidden; position: relative; height: 320.927px;"><div class="slider-wrap" style="width: 1000%; transition-duration: 0s; transform: translate3d(-1380px, 0px, 0px);"><div class="slide clone" aria-hidden="true" style="width: 690px; margin-right: 0px; float: left; display: block;"><a href="../../../static/images/blog/full/21.jpg" data-lightbox=""><img src="../../../static/images/blog/standard/21.jpg" alt="Standard Post with Gallery" draggable="false"></a></div>
+													<div class="slide" style="width: 690px; margin-right: 0px; float: left; display: block;" data-thumb-alt=""><a href="../../../static/images/blog/full/10.jpg" data-lightbox="gallery-item"><img src="../../../static/images/blog/standard/10.jpg" alt="Standard Post with Gallery" draggable="false"></a></div>
+													<div class="slide flex-active-slide" data-thumb-alt="" style="width: 690px; margin-right: 0px; float: left; display: block;"><a href="../../../static/images/blog/full/20.jpg" data-lightbox="gallery-item"><img src="../../../static/images/blog/standard/20.jpg" alt="Standard Post with Gallery" draggable="false"></a></div>
+													<div class="slide" data-thumb-alt="" style="width: 690px; margin-right: 0px; float: left; display: block;"><a href="../../../static/images/blog/full/21.jpg" data-lightbox="gallery-item"><img src="../../../static/images/blog/standard/21.jpg" alt="Standard Post with Gallery" draggable="false"></a></div>
+												<div class="slide clone" style="width: 690px; margin-right: 0px; float: left; display: block;" aria-hidden="true"><a href="../../../static/images/blog/full/10.jpg" data-lightbox=""><img src="../../../static/images/blog/standard/10.jpg" alt="Standard Post with Gallery" draggable="false"></a></div></div></div><ol class="flex-control-nav flex-control-paging"><li><a href="#" class="">1</a></li><li><a href="#" class="flex-active">2</a></li><li><a href="#">3</a></li></ol></div>
 										</div>
 									</div>
 									<div class="entry-title">
@@ -1651,15 +1652,15 @@
 									</div>
 									<div class="entry-image clearfix">
 										<div class="portfolio-single-image masonry-thumbs grid-container grid-6 has-init-isotope" data-big="3" data-lightbox="gallery" style="position: relative; height: 174px;">
-											<a class="grid-item" href="images/blog/full/2.jpg" data-lightbox="gallery-item" style="position: absolute; left: 0%; top: 0px;"><img src="images/blog/small/2.jpg" alt="Image"></a>
-											<a class="grid-item" href="images/blog/full/3.jpg" data-lightbox="gallery-item" style="position: absolute; left: 16.6666%; top: 0px;"><img src="images/blog/small/3.jpg" alt="Image"></a>
-											<a class="grid-item grid-item-big" href="images/blog/full/6-1.jpg" data-lightbox="gallery-item" style="position: absolute; left: 33.3332%; top: 0px; width: 230.666px;"><img src="images/blog/small/6-1.jpg" alt="Image"></a>
-											<a class="grid-item" href="images/blog/full/6-2.jpg" data-lightbox="gallery-item" style="position: absolute; left: 66.6665%; top: 0px;"><img src="images/blog/small/6-2.jpg" alt="Image"></a>
-											<a class="grid-item" href="images/blog/full/12.jpg" data-lightbox="gallery-item" style="position: absolute; left: 83.3331%; top: 0px;"><img src="images/blog/small/12.jpg" alt="Image"></a>
-											<a class="grid-item" href="images/blog/full/12-1.jpg" data-lightbox="gallery-item" style="position: absolute; left: 0%; top: 87px; transition-property: opacity, transform; transition-duration: 0.65s; transition-delay: 0ms; transform: translate3d(0px, 0px, 0px);"><img src="images/blog/small/12-1.jpg" alt="Image"></a>
-											<a class="grid-item" href="images/blog/full/13.jpg" data-lightbox="gallery-item" style="position: absolute; left: 16.6666%; top: 87px;"><img src="images/blog/small/13.jpg" alt="Image"></a>
-											<a class="grid-item" href="images/blog/full/18.jpg" data-lightbox="gallery-item" style="position: absolute; left: 66.6665%; top: 87px;"><img src="images/blog/small/18.jpg" alt="Image"></a>
-											<a class="grid-item" href="images/blog/full/19.jpg" data-lightbox="gallery-item" style="position: absolute; left: 83.3331%; top: 87px;"><img src="images/blog/small/19.jpg" alt="Image"></a>
+											<a class="grid-item" href="../../../static/images/blog/full/2.jpg" data-lightbox="gallery-item" style="position: absolute; left: 0%; top: 0px;"><img src="../../../static/images/blog/small/2.jpg" alt="Image"></a>
+											<a class="grid-item" href="../../../static/images/blog/full/3.jpg" data-lightbox="gallery-item" style="position: absolute; left: 16.6666%; top: 0px;"><img src="../../../static/images/blog/small/3.jpg" alt="Image"></a>
+											<a class="grid-item grid-item-big" href="../../../static/images/blog/full/6-1.jpg" data-lightbox="gallery-item" style="position: absolute; left: 33.3332%; top: 0px; width: 230.666px;"><img src="../../../static/images/blog/small/6-1.jpg" alt="Image"></a>
+											<a class="grid-item" href="../../../static/images/blog/full/6-2.jpg" data-lightbox="gallery-item" style="position: absolute; left: 66.6665%; top: 0px;"><img src="../../../static/images/blog/small/6-2.jpg" alt="Image"></a>
+											<a class="grid-item" href="../../../static/images/blog/full/12.jpg" data-lightbox="gallery-item" style="position: absolute; left: 83.3331%; top: 0px;"><img src="../../../static/images/blog/small/12.jpg" alt="Image"></a>
+											<a class="grid-item" href="../../../static/images/blog/full/12-1.jpg" data-lightbox="gallery-item" style="position: absolute; left: 0%; top: 87px; transition-property: opacity, transform; transition-duration: 0.65s; transition-delay: 0ms; transform: translate3d(0px, 0px, 0px);"><img src="../../../static/images/blog/small/12-1.jpg" alt="Image"></a>
+											<a class="grid-item" href="../../../static/images/blog/full/13.jpg" data-lightbox="gallery-item" style="position: absolute; left: 16.6666%; top: 87px;"><img src="../../../static/images/blog/small/13.jpg" alt="Image"></a>
+											<a class="grid-item" href="../../../static/images/blog/full/18.jpg" data-lightbox="gallery-item" style="position: absolute; left: 66.6665%; top: 87px;"><img src="../../../static/images/blog/small/18.jpg" alt="Image"></a>
+											<a class="grid-item" href="../../../static/images/blog/full/19.jpg" data-lightbox="gallery-item" style="position: absolute; left: 83.3331%; top: 87px;"><img src="../../../static/images/blog/small/19.jpg" alt="Image"></a>
 										</div>
 									</div>
 									<div class="entry-title">
@@ -1792,7 +1793,7 @@
 														<div class="grid-inner row no-gutters">
 															<div class="col-auto">
 																<div class="entry-image">
-																	<a href="#"><img class="rounded-circle" src="images/magazine/small/3.jpg" alt="Image"></a>
+																	<a href="#"><img class="rounded-circle" src="../../../static/images/magazine/small/3.jpg" alt="Image"></a>
 																</div>
 															</div>
 															<div class="col pl-3">
@@ -1812,7 +1813,7 @@
 														<div class="grid-inner row no-gutters">
 															<div class="col-auto">
 																<div class="entry-image">
-																	<a href="#"><img class="rounded-circle" src="images/magazine/small/2.jpg" alt="Image"></a>
+																	<a href="#"><img class="rounded-circle" src="../../../static/images/magazine/small/2.jpg" alt="Image"></a>
 																</div>
 															</div>
 															<div class="col pl-3">
@@ -1832,7 +1833,7 @@
 														<div class="grid-inner row no-gutters">
 															<div class="col-auto">
 																<div class="entry-image">
-																	<a href="#"><img class="rounded-circle" src="images/magazine/small/1.jpg" alt="Image"></a>
+																	<a href="#"><img class="rounded-circle" src="../../../static/images/magazine/small/1.jpg" alt="Image"></a>
 																</div>
 															</div>
 															<div class="col pl-3">
@@ -1855,7 +1856,7 @@
 														<div class="grid-inner row no-gutters">
 															<div class="col-auto">
 																<div class="entry-image">
-																	<a href="#"><img class="rounded-circle" src="images/magazine/small/1.jpg" alt="Image"></a>
+																	<a href="#"><img class="rounded-circle" src="../../../static/images/magazine/small/1.jpg" alt="Image"></a>
 																</div>
 															</div>
 															<div class="col pl-3">
@@ -1875,7 +1876,7 @@
 														<div class="grid-inner row no-gutters">
 															<div class="col-auto">
 																<div class="entry-image">
-																	<a href="#"><img class="rounded-circle" src="images/magazine/small/2.jpg" alt="Image"></a>
+																	<a href="#"><img class="rounded-circle" src="../../../static/images/magazine/small/2.jpg" alt="Image"></a>
 																</div>
 															</div>
 															<div class="col pl-3">
@@ -1895,7 +1896,7 @@
 														<div class="grid-inner row no-gutters">
 															<div class="col-auto">
 																<div class="entry-image">
-																	<a href="#"><img class="rounded-circle" src="images/magazine/small/3.jpg" alt="Image"></a>
+																	<a href="#"><img class="rounded-circle" src="../../../static/images/magazine/small/3.jpg" alt="Image"></a>
 																</div>
 															</div>
 															<div class="col pl-3">
@@ -1918,7 +1919,7 @@
 														<div class="grid-inner row no-gutters">
 															<div class="col-auto">
 																<div class="entry-image">
-																	<a href="#"><img class="rounded-circle" src="images/icons/avatar.jpg" alt="User Avatar"></a>
+																	<a href="#"><img class="rounded-circle" src="../../../static/images/icons/avatar.jpg" alt="User Avatar"></a>
 																</div>
 															</div>
 															<div class="col pl-3">
@@ -1931,7 +1932,7 @@
 														<div class="grid-inner row no-gutters">
 															<div class="col-auto">
 																<div class="entry-image">
-																	<a href="#"><img class="rounded-circle" src="images/icons/avatar.jpg" alt="User Avatar"></a>
+																	<a href="#"><img class="rounded-circle" src="../../../static/images/icons/avatar.jpg" alt="User Avatar"></a>
 																</div>
 															</div>
 															<div class="col pl-3">
@@ -1944,7 +1945,7 @@
 														<div class="grid-inner row no-gutters">
 															<div class="col-auto">
 																<div class="entry-image">
-																	<a href="#"><img class="rounded-circle" src="images/icons/avatar.jpg" alt="User Avatar"></a>
+																	<a href="#"><img class="rounded-circle" src="../../../static/images/icons/avatar.jpg" alt="User Avatar"></a>
 																</div>
 															</div>
 															<div class="col pl-3">
@@ -1974,7 +1975,7 @@
 											<div class="portfolio-item">
 												<div class="portfolio-image">
 													<a href="#">
-														<img src="images/portfolio/4/3.jpg" alt="Mac Sunglasses">
+														<img src="../../../static/images/portfolio/4/3.jpg" alt="Mac Sunglasses">
 													</a>
 													<div class="bg-overlay">
 														<div class="bg-overlay-content dark not-animated" data-hover-animate="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;">
@@ -1992,11 +1993,11 @@
 											<div class="portfolio-item">
 												<div class="portfolio-image">
 													<a href="portfolio-single.html">
-														<img src="images/portfolio/4/1.jpg" alt="Open Imagination">
+														<img src="../../../static/images/portfolio/4/1.jpg" alt="Open Imagination">
 													</a>
 													<div class="bg-overlay">
 														<div class="bg-overlay-content dark not-animated" data-hover-animate="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;">
-															<a href="images/blog/full/1.jpg" class="overlay-trigger-icon bg-light text-dark not-animated" data-hover-animate="zoomIn" data-hover-speed="350" data-lightbox="image" style="animation-duration: 350ms;"><i class="icon-line-plus"></i></a>
+															<a href="../../../static/images/blog/full/1.jpg" class="overlay-trigger-icon bg-light text-dark not-animated" data-hover-animate="zoomIn" data-hover-speed="350" data-lightbox="image" style="animation-duration: 350ms;"><i class="icon-line-plus"></i></a>
 														</div>
 														<div class="bg-overlay-bg dark not-animated" data-hover-animate="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;"></div>
 													</div>
@@ -2010,7 +2011,7 @@
 											<div class="portfolio-item">
 												<div class="portfolio-image">
 													<a href="#">
-														<img src="images/portfolio/4/3.jpg" alt="Mac Sunglasses">
+														<img src="../../../static/images/portfolio/4/3.jpg" alt="Mac Sunglasses">
 													</a>
 													<div class="bg-overlay">
 														<div class="bg-overlay-content dark not-animated" data-hover-animate="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;">
@@ -2028,11 +2029,11 @@
 											<div class="portfolio-item">
 												<div class="portfolio-image">
 													<a href="portfolio-single.html">
-														<img src="images/portfolio/4/1.jpg" alt="Open Imagination">
+														<img src="../../../static/images/portfolio/4/1.jpg" alt="Open Imagination">
 													</a>
 													<div class="bg-overlay">
 														<div class="bg-overlay-content dark not-animated" data-hover-animate="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;">
-															<a href="images/blog/full/1.jpg" class="overlay-trigger-icon bg-light text-dark not-animated" data-hover-animate="zoomIn" data-hover-speed="350" data-lightbox="image" style="animation-duration: 350ms;"><i class="icon-line-plus"></i></a>
+															<a href="../../../static/images/blog/full/1.jpg" class="overlay-trigger-icon bg-light text-dark not-animated" data-hover-animate="zoomIn" data-hover-speed="350" data-lightbox="image" style="animation-duration: 350ms;"><i class="icon-line-plus"></i></a>
 														</div>
 														<div class="bg-overlay-bg dark not-animated" data-hover-animate="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;"></div>
 													</div>
@@ -2046,7 +2047,7 @@
 											<div class="portfolio-item">
 												<div class="portfolio-image">
 													<a href="#">
-														<img src="images/portfolio/4/3.jpg" alt="Mac Sunglasses">
+														<img src="../../../static/images/portfolio/4/3.jpg" alt="Mac Sunglasses">
 													</a>
 													<div class="bg-overlay">
 														<div class="bg-overlay-content dark not-animated" data-hover-animate="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;">
@@ -2064,11 +2065,11 @@
 											<div class="portfolio-item">
 												<div class="portfolio-image">
 													<a href="portfolio-single.html">
-														<img src="images/portfolio/4/1.jpg" alt="Open Imagination">
+														<img src="../../../static/images/portfolio/4/1.jpg" alt="Open Imagination">
 													</a>
 													<div class="bg-overlay">
 														<div class="bg-overlay-content dark not-animated" data-hover-animate="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;">
-															<a href="images/blog/full/1.jpg" class="overlay-trigger-icon bg-light text-dark not-animated" data-hover-animate="zoomIn" data-hover-speed="350" data-lightbox="image" style="animation-duration: 350ms;"><i class="icon-line-plus"></i></a>
+															<a href="../../../static/images/blog/full/1.jpg" class="overlay-trigger-icon bg-light text-dark not-animated" data-hover-animate="zoomIn" data-hover-speed="350" data-lightbox="image" style="animation-duration: 350ms;"><i class="icon-line-plus"></i></a>
 														</div>
 														<div class="bg-overlay-bg dark not-animated" data-hover-animate="fadeIn" data-hover-speed="350" style="animation-duration: 350ms;"></div>
 													</div>
@@ -2126,11 +2127,11 @@
 
 									<div class="widget clearfix">
 
-										<img src="images/footer-widget-logo.png" alt="Image" class="footer-logo">
+										<img src="../../../static/images/footer-widget-logo.png" alt="Image" class="footer-logo">
 
 										<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>
 
-										<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+										<div style="background: url('../../../static/images/world-map.png') no-repeat center center; background-size: 100%;">
 											<address>
 												<strong>Headquarters:</strong><br>
 												795 Folsom Ave, Suite 600<br>

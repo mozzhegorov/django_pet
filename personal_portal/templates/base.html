@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>Title</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="author" content="SemiColonWeb">
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&amp;display=swap" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/dark.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/font-icons.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+
+	<link rel="stylesheet" href="{% static 'css/custom.css' %}" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/plugins.min.js' %}"></script>
+</head>
+<body>
+<div id="wrapper" class="clearfix">
+		<header id="header" class="full-header">
+			<div id="header-wrap" class="">
+				<div class="container">
+					<div class="header-row top-search-parent">
+						<div id="logo">
+							MDA
+						</div>
+						<div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+						</div>
+						<nav class="primary-menu">
+							<ul class="menu-container">
+								<li class="menu-item sub-menu">
+									<a class="menu-link" href="index.html" style="">
+										<div>
+											Домой
+											<i class="icon-angle-down">
+											</i>
+										</div>
+									</a>
+									<ul class="sub-menu-container" style="">
+										<li class="menu-item" style="">
+											<a class="menu-link" href="intro.html#section-niche"><div>Niche Demos</div></a>
+										</li>
+										<li class="menu-item" style="">
+											<a class="menu-link" href="intro.html#section-onepage"><div>One-Page Demos</div></a>
+										</li>
+										<li class="menu-item sub-menu" style="">
+											<a class="menu-link" href="index-corporate.html"><div>Home - Corporate<i class="icon-angle-down"></i></div></a>
+											<ul class="sub-menu-container" style="display: none;">
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-corporate.html"><div>Corporate - Layout 1</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-corporate-2.html"><div>Corporate - Layout 2</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-corporate-3.html"><div>Corporate - Layout 3</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-corporate-4.html"><div>Corporate - Layout 4</div></a>
+												</li>
+											</ul>
+										<button class="sub-menu-trigger icon-chevron-right"></button></li>
+										<li class="menu-item sub-menu" style="">
+											<a class="menu-link" href="index-portfolio.html"><div>Home - Portfolio<i class="icon-angle-down"></i></div></a>
+											<ul class="sub-menu-container" style="display: none;">
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-portfolio.html"><div>Portfolio - Layout 1</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-portfolio-2.html"><div>Portfolio - Layout 2</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-portfolio-3.html"><div>Portfolio - Masonry</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-portfolio-4.html"><div>Portfolio - AJAX</div></a>
+												</li>
+											</ul>
+										<button class="sub-menu-trigger icon-chevron-right"></button></li>
+										<li class="menu-item sub-menu" style="">
+											<a class="menu-link" href="index-blog.html"><div>Home - Blog<i class="icon-angle-down"></i></div></a>
+											<ul class="sub-menu-container" style="display: none;">
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-blog.html"><div>Blog - Layout 1</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-blog-2.html"><div>Blog - Layout 2</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-blog-3.html"><div>Blog - Layout 3</div></a>
+												</li>
+											</ul>
+										<button class="sub-menu-trigger icon-chevron-right"></button></li>
+										<li class="menu-item sub-menu" style="">
+											<a class="menu-link" href="index-shop.html"><div>Home - Shop<i class="icon-angle-down"></i></div></a>
+											<ul class="sub-menu-container" style="display: none;">
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-shop.html"><div>Shop - Layout 1</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-shop-2.html"><div>Shop - Layout 2</div></a>
+												</li>
+											</ul>
+										<button class="sub-menu-trigger icon-chevron-right"></button></li>
+										<li class="menu-item sub-menu" style="">
+											<a class="menu-link" href="index-magazine.html"><div>Home - Magazine<i class="icon-angle-down"></i></div></a>
+											<ul class="sub-menu-container" style="display: none;">
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-magazine.html"><div>Magazine - Layout 1</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-magazine-2.html"><div>Magazine - Layout 2</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-magazine-3.html"><div>Magazine - Layout 3</div></a>
+												</li>
+											</ul>
+										<button class="sub-menu-trigger icon-chevron-right"></button></li>
+										<li class="menu-item sub-menu" style="">
+											<a class="menu-link" href="landing.html"><div>Home - Landing Page<i class="icon-angle-down"></i></div></a>
+											<ul class="sub-menu-container" style="display: none;">
+												<li class="menu-item" style="">
+													<a class="menu-link" href="landing.html"><div>Landing Page - Layout 1</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="landing-2.html"><div>Landing Page - Layout 2</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="landing-3.html"><div>Landing Page - Layout 3</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="landing-4.html"><div>Landing Page - Layout 4</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="landing-5.html"><div>Landing Page - Layout 5</div></a>
+												</li>
+											</ul>
+										<button class="sub-menu-trigger icon-chevron-right"></button></li>
+										<li class="menu-item sub-menu" style="">
+											<a class="menu-link" href="index-fullscreen-image.html"><div>Home - Full Screen<i class="icon-angle-down"></i></div></a>
+											<ul class="sub-menu-container" style="display: none;">
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-fullscreen-image.html"><div>Full Screen - Image</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-fullscreen-slider.html"><div>Full Screen - Slider</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-fullscreen-video.html"><div>Full Screen - Video</div></a>
+												</li>
+											</ul>
+										<button class="sub-menu-trigger icon-chevron-right"></button></li>
+										<li class="menu-item sub-menu" style="">
+											<a class="menu-link" href="index-onepage.html"><div>Home - One Page<i class="icon-angle-down"></i></div></a>
+											<ul class="sub-menu-container" style="display: none;">
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-onepage.html"><div>One Page - Default</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-onepage-2.html"><div>One Page - Submenu</div></a>
+												</li>
+												<li class="menu-item" style="">
+													<a class="menu-link" href="index-onepage-3.html"><div>One Page - Dots Style</div></a>
+												</li>
+											</ul>
+										<button class="sub-menu-trigger icon-chevron-right"></button></li>
+										<li class="menu-item mega-menu mega-menu-small sub-menu" style="">
+											<a class="menu-link" href="#"><div>Extras<i class="icon-angle-down"></i></div></a>
+											<div class="mega-menu-content" style="display: none;">
+												<div class="row mx-0" style="">
+													<ul class="sub-menu-container mega-menu-column col" style="display: none;">
+														<li class="menu-item" style="">
+															<a class="menu-link" href="index-wedding.html"><div>Wedding</div></a>
+														</li>
+														<li class="menu-item" style="">
+															<a class="menu-link" href="index-restaurant.html"><div>Restaurant</div></a>
+														</li>
+														<li class="menu-item" style="">
+															<a class="menu-link" href="index-events.html"><div>Events</div></a>
+														</li>
+													</ul>
+													<ul class="sub-menu-container mega-menu-column col" style="display: none;">
+														<li class="menu-item" style="">
+															<a class="menu-link" href="index-parallax.html"><div>Parallax</div></a>
+														</li>
+														<li class="menu-item" style="">
+															<a class="menu-link" href="index-app-showcase.html"><div>App Showcase</div></a>
+														</li>
+														<li class="menu-item" style="">
+															<a class="menu-link" href="index-boxed.html"><div>Boxed Layout</div></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										<button class="sub-menu-trigger icon-chevron-right"></button></li>
+									</ul>
+								<button class="sub-menu-trigger icon-chevron-right"></button></li>
+								<li class="menu-item mega-menu sub-menu">
+									<a class="menu-link" href="#" style="">
+										<div>
+											Для примера
+											<i class="icon-angle-down">
+
+											</i>
+										</div>
+									</a>
+									<div class="mega-menu-content mega-menu-style-2" style="">
+										<div class="container" style="">
+											<div class="row">
+												<ul class="sub-menu-container mega-menu-column col-lg-3" style="display: none;">
+													<li class="menu-item mega-menu-title sub-menu" style="">
+														<a class="menu-link" href="#"><div>Introductory</div></a>
+														<ul class="sub-menu-container" style="display: none;">
+															<li class="menu-item sub-menu" style="">
+																<a class="menu-link" href="about.html"><div>About Us<i class="icon-angle-down"></i></div></a>
+																<ul class="sub-menu-container mega-menu-dropdown" style="">
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="about.html"><div>Main Layout</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="about-2.html"><div>Alternate Layout</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="about-me.html"><div>About Me</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="team.html"><div>Team Members</div></a>
+																	</li>
+																</ul>
+															<button class="sub-menu-trigger icon-chevron-right"></button></li>
+															<li class="menu-item sub-menu" style="">
+																<a class="menu-link" href="gdpr.html"><div>GDPR Compliance<i class="icon-angle-down"></i></div></a>
+																<ul class="sub-menu-container mega-menu-dropdown" style="display: none;">
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="gdpr.html"><div>Default</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="gdpr-small.html"><div>Small</div></a>
+																	</li>
+																</ul>
+															<button class="sub-menu-trigger icon-chevron-right"></button></li>
+															<li class="menu-item" style="">
+																<a class="menu-link" href="jobs.html"><div>Careers</div></a>
+															</li>
+															<li class="menu-item" style="">
+																<a class="menu-link" href="profile.html"><div>User Profile</div></a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+												<ul class="sub-menu-container mega-menu-column col-lg-3" style="display: none;">
+													<li class="menu-item mega-menu-title sub-menu" style="">
+														<a class="menu-link" href="#"><div>Utility &amp; Specials</div></a>
+														<ul class="sub-menu-container" style="display: none;">
+															<li class="menu-item sub-menu" style="">
+																<a class="menu-link" href="services.html"><div><i class="icon-star-of-life"></i>Services Pages<i class="icon-angle-down"></i></div></a>
+																<ul class="sub-menu-container mega-menu-dropdown" style="display: none;">
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="services.html"><div>Layout 1</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="services-2.html"><div>Layout 2</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="services-3.html"><div>Layout 3</div></a>
+																	</li>
+																</ul>
+															<button class="sub-menu-trigger icon-chevron-right"></button></li>
+															<li class="menu-item sub-menu" style="">
+																<a class="menu-link" href="#"><div><i class="icon-calendar3"></i>Events<i class="icon-angle-down"></i></div></a>
+																<ul class="sub-menu-container mega-menu-dropdown" style="display: none;">
+																	<li class="menu-item sub-menu" style="">
+																		<a class="menu-link" href="events-list.html"><div>Events List<i class="icon-angle-down"></i></div></a>
+																		<ul class="sub-menu-container mega-menu-dropdown" style="display: none;">
+																			<li class="menu-item" style="">
+																				<a class="menu-link" href="events-list.html"><div>Right Sidebar</div></a>
+																			</li>
+																			<li class="menu-item" style="">
+																				<a class="menu-link" href="events-list-left-sidebar.html"><div>Left Sidebar</div></a>
+																			</li>
+																			<li class="menu-item" style="">
+																				<a class="menu-link" href="events-list-both-sidebar.html"><div>Both Sidebar</div></a>
+																			</li>
+																			<li class="menu-item" style="">
+																				<a class="menu-link" href="events-list-fullwidth.html"><div>Full Width</div></a>
+																			</li>
+																			<li class="menu-item" style="">
+																				<a class="menu-link" href="events-list-parallax.html"><div>Parallax List</div></a>
+																			</li>
+																		</ul>
+																	<button class="sub-menu-trigger icon-chevron-right"></button></li>
+																	<li class="menu-item sub-menu" style="">
+																		<a class="menu-link" href="event-single.html"><div>Single Event<i class="icon-angle-down"></i></div></a>
+																		<ul class="sub-menu-container mega-menu-dropdown" style="display: none;">
+																			<li class="menu-item" style="">
+																				<a class="menu-link" href="event-single-right-sidebar.html"><div>Right Sidebar</div></a>
+																			</li>
+																			<li class="menu-item" style="">
+																				<a class="menu-link" href="event-single-left-sidebar.html"><div>Left Sidebar</div></a>
+																			</li>
+																			<li class="menu-item" style="">
+																				<a class="menu-link" href="event-single-both-sidebar.html"><div>Both Sidebar</div></a>
+																			</li>
+																			<li class="menu-item" style="">
+																				<a class="menu-link" href="event-single.html"><div>Full Width</div></a>
+																			</li>
+																		</ul>
+																	<button class="sub-menu-trigger icon-chevron-right"></button></li>
+																	<li class="menu-item sub-menu" style="">
+																		<a class="menu-link" href="event-single-full-width-image.html"><div>Single Event - Full<i class="icon-angle-down"></i></div></a>
+																		<ul class="sub-menu-container mega-menu-dropdown" style="display: none;">
+																			<li class="menu-item" style="">
+																				<a class="menu-link" href="event-single-full-width-image.html"><div>Parallax Image</div></a>
+																			</li>
+																			<li class="menu-item" style="">
+																				<a class="menu-link" href="event-single-full-width-map.html"><div>Google Map</div></a>
+																			</li>
+																			<li class="menu-item" style="">
+																				<a class="menu-link" href="event-single-full-width-slider.html"><div>Slider Gallery</div></a>
+																			</li>
+																			<li class="menu-item" style="">
+																				<a class="menu-link" href="event-single-full-width-video.html"><div>HTML5 Video</div></a>
+																			</li>
+																		</ul>
+																	<button class="sub-menu-trigger icon-chevron-right"></button></li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="events-calendar.html"><div>Full Width Calendar</div></a>
+																	</li>
+																</ul>
+															<button class="sub-menu-trigger icon-chevron-right"></button></li>
+															<li class="menu-item sub-menu" style="">
+																<a class="menu-link" href="contact.html"><div><i class="icon-envelope"></i>Contact Pages<i class="icon-angle-down"></i></div></a>
+																<ul class="sub-menu-container mega-menu-dropdown" style="display: none;">
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="contact.html">Main Layout</a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="contact-2.html">Grid Layout</a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="contact-3.html">Right Sidebar</a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="contact-4.html">Both Sidebars</a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="contact-5.html">Modal Form</a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="contact-6.html">Form Overlay</a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="contact-7.html">Form Overlay Mini</a>
+																	</li>
+																</ul>
+															<button class="sub-menu-trigger icon-chevron-right"></button></li>
+															<li class="menu-item sub-menu" style="">
+																<a class="menu-link" href="faqs.html"><div><i class="icon-question-circle"></i>FAQs Pages<i class="icon-angle-down"></i></div></a>
+																<ul class="sub-menu-container mega-menu-dropdown" style="display: none;">
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="faqs.html"><div>Layout 1</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="faqs-2.html"><div>Layout 2</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="faqs-3.html"><div>Layout 3</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="faqs-4.html"><div>Layout 4</div></a>
+																	</li>
+																</ul>
+															<button class="sub-menu-trigger icon-chevron-right"></button></li>
+														</ul>
+													</li>
+												</ul>
+												<ul class="sub-menu-container mega-menu-column col-lg-3" style="display: none;">
+													<li class="menu-item mega-menu-title sub-menu" style="">
+														<a class="menu-link" href="#"><div>Layouts &amp; PageNavs</div></a>
+														<ul class="sub-menu-container" style="display: none;">
+															<li class="menu-item sub-menu" style="">
+																<a class="menu-link" href="full-width.html"><div>Full Width<i class="icon-angle-down"></i></div></a>
+																<ul class="sub-menu-container mega-menu-dropdown" style="display: none;">
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="full-width.html"><div>Default Width</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="full-width-wide.html"><div>Wide Width</div></a>
+																	</li>
+																</ul>
+															<button class="sub-menu-trigger icon-chevron-right"></button></li>
+															<li class="menu-item sub-menu" style="">
+																<a class="menu-link" href="#"><div>Sidebars<i class="icon-angle-down"></i></div></a>
+																<ul class="sub-menu-container mega-menu-dropdown" style="display: none;">
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="right-sidebar.html"><div>Right Sidebar</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="left-sidebar.html"><div>Left Sidebar</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="both-sidebar.html"><div>Both Sidebar</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="both-right-sidebar.html"><div>Both Right Sidebar</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="both-left-sidebar.html"><div>Both Left Sidebar</div></a>
+																	</li>
+																</ul>
+															<button class="sub-menu-trigger icon-chevron-right"></button></li>
+															<li class="menu-item" style="">
+																<a class="menu-link" href="page-submenu.html"><div>Page Submenu</div></a>
+															</li>
+															<li class="menu-item" style="">
+																<a class="menu-link" href="side-navigation.html"><div>Side Navigation</div></a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+												<ul class="sub-menu-container mega-menu-column col-lg-3" style="display: none;">
+													<li class="menu-item mega-menu-title sub-menu" style="">
+														<a class="menu-link" href="#"><div>Miscellaneous</div></a>
+														<ul class="sub-menu-container" style="display: none;">
+															<li class="menu-item sub-menu" style="">
+																<a class="menu-link" href="login-register.html"><div>Login/Register<i class="icon-angle-down"></i></div></a>
+																<ul class="sub-menu-container mega-menu-dropdown menu-pos-invert" style="display: none;">
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="login-register.html"><div>Default Layout</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="login-register-2.html"><div>Tabbed Login</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="login-register-3.html"><div>Login Accordion</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="login-1.html"><div>Dark BG Login</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="login-2.html"><div>Image BG Login</div></a>
+																	</li>
+																</ul>
+															<button class="sub-menu-trigger icon-chevron-right"></button></li>
+															<li class="menu-item sub-menu" style="">
+																<a class="menu-link" href="coming-soon.html"><div>Coming Soon<i class="icon-angle-down"></i></div></a>
+																<ul class="sub-menu-container mega-menu-dropdown menu-pos-invert" style="display: none;">
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="coming-soon.html"><div>Default Layout</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="coming-soon-2.html"><div>Parallax Image</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="coming-soon-3.html"><div>HTML5 Video</div></a>
+																	</li>
+																</ul>
+															<button class="sub-menu-trigger icon-chevron-right"></button></li>
+															<li class="menu-item sub-menu" style="">
+																<a class="menu-link" href="404.html"><div>404 Pages<i class="icon-angle-down"></i></div></a>
+																<ul class="sub-menu-container mega-menu-dropdown menu-pos-invert" style="display: none;">
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="404.html"><div>Default Layout</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="404-2.html"><div>Parallax Image</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="404-3.html"><div>HTML5 Video</div></a>
+																	</li>
+																</ul>
+															<button class="sub-menu-trigger icon-chevron-right"></button></li>
+															<li class="menu-item sub-menu" style="">
+																<a class="menu-link" href="#"><div>Extras<i class="icon-angle-down"></i></div></a>
+																<ul class="sub-menu-container mega-menu-dropdown menu-pos-invert" style="display: none;">
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="blank-page.html"><div>Blank Page</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="maintenance.html"><div>Maintenance Page</div></a>
+																	</li>
+																	<li class="menu-item" style="">
+																		<a class="menu-link" href="sitemap.html"><div>Sitemap</div></a>
+																	</li>
+																</ul>
+															<button class="sub-menu-trigger icon-chevron-right"></button></li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								<button class="sub-menu-trigger icon-chevron-right"></button></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone" style="height: 100px;"></div>
+		</header>
+	{% block content %}
+	Content
+	{% endblock %}
+
+
+	</div>
+</body>
+</html>

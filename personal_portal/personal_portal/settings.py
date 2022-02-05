@@ -28,6 +28,7 @@ ALLOWED_HOSTS = [
     '192.168.1.105',
     '178.72.91.53',
     '127.0.0.1',
+    'localhost',
 ]
 
 # Application definition
@@ -53,11 +54,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'personal_portal.urls'
 
-TEMPLATES_BLOG_DIR = os.path.join(BASE_DIR, "blog", "templates")
+TEMPLATES_BLOG_DIR = os.path.join(BASE_DIR, "app_blog", "templates")
+TEMPLATES_GENERAL_DIR = os.path.join(BASE_DIR, "templates")
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_BLOG_DIR, ],
+        'DIRS': [TEMPLATES_BLOG_DIR, TEMPLATES_GENERAL_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
